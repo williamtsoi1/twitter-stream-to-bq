@@ -1,0 +1,76 @@
+[
+  {
+    "name": "retweeted_id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "text",
+    "type": "STRING"
+  },
+  {
+    "name": "hashtags",
+    "type": "record",
+    "mode": "repeated",
+    "fields": [
+      {
+        "name": "text",
+        "type": "STRING"
+      },
+      {
+        "name": "startindex",
+        "type": "INTEGER"
+      }
+    ]
+  },
+  {
+    "name": "coordinates_latitude",
+    "type": "INTEGER"
+  },
+  {
+    "name": "usermentions",
+    "type": "record",
+    "mode": "repeated",
+    "fields": [
+      {
+        "name": "startindex",
+        "type": "INTEGER"
+      },
+      {
+        "name": "screen_name",
+        "type": "STRING"
+      }
+    ]
+  },
+  {
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "favorite_count",
+    "type": "INTEGER"
+  },
+  {
+    "name": "lang",
+    "type": "STRING"
+  },
+  {
+    "name": "coordinates_longitude",
+    "type": "INTEGER"
+  },
+  {
+    "name": "user_id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "created_at",
+    "type": "INTEGER"
+  },
+  {
+    "name": "place",
+    "type": "STRING"
+  },
+  {
+    "name": "retweet_count",
+    "type": "INTEGER"
+  }
+]
