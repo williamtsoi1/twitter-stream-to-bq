@@ -35,7 +35,7 @@ consumer_secret = os.environ['CONSUMERSECRET']
 access_token = os.environ['ACCESSTOKEN']
 access_token_secret = os.environ['ACCESSTOKENSEC']
 
-PUBSUB_TOPIC = os.environ['PUBSUB_TOPIC']
+PUBSUB_TOPIC = os.environ['FQ_PUBSUB_TOPIC']
 NUM_RETRIES = 3
 
 
