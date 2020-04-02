@@ -96,7 +96,7 @@ class StdOutListener(StreamListener):
     count = 0
     twstring = ''
     tweets = []
-    batch_size = 50
+    batch_size = 5000
     total_tweets = 10000000
     client = utils.create_pubsub_client(utils.get_credentials())
 
@@ -115,8 +115,8 @@ class StdOutListener(StreamListener):
         # If this script is being run in the context of a kubernetes
         # replicationController, the pod will be restarted fresh when
         # that happens.
-        if self.count > self.total_tweets:
-            return False
+        #if self.count > self.total_tweets:
+        #    return False
         if (self.count % 1000) == 0:
             print 'count is: %s at %s' % (self.count, datetime.datetime.now())
         return True
